@@ -59,7 +59,11 @@ public class OddsEvensAndSum {
 			}
 		} while (quit == false);
 		
-		System.out.println("sum is: " + sum);
+		System.out.println("sum is: \"" + sum + "\"");
+		
+		System.out.println("\'Sally\' is so pumped");
+		
+		System.out.println("  \'   \"   ");
 	}
 
 	private static boolean isEven(int num) {
