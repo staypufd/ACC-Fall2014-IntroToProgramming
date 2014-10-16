@@ -48,16 +48,23 @@ public class GuessTheNumber {
 		} while ( (inputNum < 1) || (inputNum > 10) );
 
 		int tries = 3;
-
+		int randomGuess = -1;
+		int previousGuess = randomGuess;
+		
 		while (tries > 0) {
 			tries -= 1;
-			int randomGuess = new Random().nextInt(10) + 1;
+			randomGuess = new Random().nextInt(10) + 1;
+			while (previousGuess == randomGuess) {
+				System.out.println("------");
+				randomGuess = new Random().nextInt(10) + 1;
+			}
 			System.out.println("Computer guesses: " + randomGuess);
 			if (randomGuess == inputNum) {
 				System.out.println("Computer Wins! Your number was: "
 						+ randomGuess);
 				return;
 			}
+			previousGuess = randomGuess;
 		}
 
 		System.out.println("You win!");
