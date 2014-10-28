@@ -52,6 +52,7 @@ public class SinWaveDemo {
 	
 	private static void printOneLine(long numAstricks)
 	{
+		// Sin less than zero, greater than zero and equal zero
 		if(numAstricks < 0) {
 			String s = "";
 			for (int i = 0; i >= numAstricks; i--) {
@@ -68,7 +69,7 @@ public class SinWaveDemo {
 				System.out.print("*");
 			}
 			System.out.println();
-		} else {
+		} else if(numAstricks == 0) {
 			for (int i = 0; i <= 10; i++) {
 				System.out.print(" ");
 			}
