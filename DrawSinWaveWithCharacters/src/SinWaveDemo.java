@@ -61,19 +61,24 @@ public class SinWaveDemo {
 			s+= "|";
 			System.out.println(String.format("%12s", s));
 		} else if(numAstricks > 0) {
-			for (int i = 0; i <= 10; i++) {
-				System.out.print(" ");
-			}
-			System.out.print("|");
+			printTenSpacesAndVerticalBar();
 			for (int i = 0; i <= numAstricks; i++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		} else if(numAstricks == 0) {
-			for (int i = 0; i <= 10; i++) {
-				System.out.print(" ");
-			}
-			System.out.println("|");
+			printTenSpacesAndVerticalBar();
+			System.out.println();
 		}
+	}
+
+	/**
+	 * 
+	 */
+	private static void printTenSpacesAndVerticalBar() {
+		for (int i = 0; i <= 10; i++) {
+			System.out.print(" ");
+		}
+		System.out.print("|");
 	}
 }
