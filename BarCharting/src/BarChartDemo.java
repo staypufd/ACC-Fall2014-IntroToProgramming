@@ -2,7 +2,6 @@
  * 
  */
 
-import java.awt.Color;
 
 /**
  * @author javauser
