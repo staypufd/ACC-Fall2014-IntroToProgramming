@@ -160,7 +160,6 @@ public class AnswerToHomeworkOct212014 {
 
 		for (int j = 0; j < 4; j++) {
 			averages[j] = totals[j] / 5;
-
 		}
 	}
 
